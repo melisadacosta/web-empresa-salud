@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    margin:auto;
+    background-color: #f5f5f5;
+}
+header{
+    height: 15%;
+    background-color: #364962;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+header img{
+    width: 15%;
+}
+form{
+    width: 600px;
+    height: 40px;
+    display: flex;
+}
+#searchbar{
+    width: 400px;
+    background-color: #efefef;
+    padding: 10px 60px;
+    border: none;
+}
+#searchbtn{
+    width: 67px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: dimgray;
+}
+input[type="submit"] {
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 1.3333333333333333em;
+    font-weight: 900;
+    color: white;
+}
+.slider{
+    background-image: url(../img/testCOVID.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#section-informe{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section-informe h1{
+    font-size: 24px;
+    color: darkgray;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.container-informe{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.article-informe{
+    display: flex;
+}
+.article-informe a{
+    width: 160px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #ff5a5f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #364962;
+    color: white;
+    margin-top: 30px;
+    padding: 50px 0px;
+}
+footer li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 200;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer h3{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.redes-sociales ul{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.redes-sociales i{
+    font-size: 16px;
+}
+.atencion-salud{
+    background-color: #2973a2;
+    color: white;
+    padding: 60px 0px;
+}
+.contenedor-sintomas{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-telefono{
+    display: flex;
+    align-items: center;
+}
+.contenedor-telefono h2{
+    font-size: 150px;
+    font-weight: 200;
+}
+.contenedor-telefono i{
+    font-size: 118px;
+    padding-right: 80px;
+}
+.contenedor-sintomas p{
+    font-size: 28px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+.contenedor-salud{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.contenedor-sintomas h2{
+    font-size: 80px;
+}
