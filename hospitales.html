@@ -27,49 +27,20 @@
                 </datalist>
             </form>
         </div>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="listado.html">ENFERMEDADES</a></li>
+                <li><a href="#">VACUNACION</a></li>
+                <li><a href="#hospitales-page">HOSPITALES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="slider">
-        <img src="img/testCOVID.jpg" alt="covid">
-        <i class="fas fa-chevron-left control-left"></i>
-        <i class="fas fa-chevron-right control-right"></i>
-    </section>
-    <main>
-        <section id="section-informe">
-            <h1>Obra social de programadores front</h1>
-            <div class="container-informe">
-                <article>
-                    <img src="img/enfermedaddes.jpg" alt="Enfermedades">
-                    <a href="listado.html">Enfermedades</a>
-                </article>
-                <article>
-                    <img src="img/vacuna.jpg" alt="vacunas">
-                    <a href="#">Vacunas</a>
-                </article>
-                <article>
-                    <img src="img/hospitales.jpg" alt="Hospitales">
-                    <a href="hospitales.html">Mapa de Hospitales</a>
-                </article>
-            </div>
-        </section>
-        <section class="atencion-salud">
-            <div class="container-atencion-salud">
-                <article class="virus">
-                    <img src="img/icono-covid.png" alt="covid icono">
-                    <h4>COVID-19</h4>
-                </article>
-                <article class="info">
-                    <p><strong>Donando plasma</strong> podés ayudar a quienes todavía no se recuperaron</p>
-                    <div class="container-tel">
-                        <div class="tel">
-                            <i class="fas fa-phone-alt"></i>
-                            <h3>0800-222-0101</h3>
-                        </div>
-                        <p>Pcia. de Buenos Aires</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
+    <main id="hospitales-page">
+        <h2>MAPA DE HOSPITALES DISPONIBLES</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d74272.3588728418!2d-58.56513946288238!3d-34.644459904554694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales!5e0!3m2!1ses!2sar!4v1602371751544!5m2!1ses!2sar"></iframe>
     </main>
     <footer>
         <div class="container-footer">
@@ -86,7 +57,7 @@
                 <ul>
                     <li><a href="listado.html">Enfermedades</a></li>
                     <li><a href="#">Vacunas</a> </li>
-                    <li><a href="hospitales.html">Hospitales</a></li>
+                    <li><a href="#hospitales-page">Hospitales</a></li>
                     <li><a href="contacto.html">Contacto</a> </li>
                 </ul>
             </article>

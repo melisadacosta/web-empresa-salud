@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container-logo-searchbar">
+            <img src="img/logoo.png" alt="logo-principal">
+            <form action="" method="get" class="buscador">
+                <input type="text" list="enfermedades" id="searchbar">
+                <input type="submit" id="searchbtn" value="&#xf002" />
+                <datalist id="enfermedades">
+                    <option value="COVID-19">
+                    <option value="LARINGITIS">
+                    <option value="CONJUNTIVITIS">
+                    <option value="ASMA">
+                    <option value="ZIKA">
+                </datalist>
+            </form>
+        </div>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="listado.html">ENFERMEDADES</a></li>
+                <li><a href="#">VACUNACION</a></li>
+                <li><a href="hospitales.html">HOSPITALES</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="enfermedad-page">
+        <h1>COVID-19</h1>
+        <article class="principal">
+            <img src="img/COVID.jpg" alt="covid">
+            <div class="container-text">
+                <p>Los coronavirus son una familia de virus que pueden causar enfermedades en animales y en humanos.
+                    En los seres humanos pueden provocar infecciones respiratorias que van desde un resfrío común
+                    hasta enfermedades más graves, como el síndrome respiratorio de Medio Oriente (MERS)
+                    y el síndrome respiratorio agudo severo (SRAS-SARS).
+                    <br><br>
+                    Actualmente nos encontramos ante una pandemia (epidemia que se propaga a escala mundial)
+                    por un nuevo coronavirus, SARS-CoV-2, que fue descubierto y causa la enfermedad
+                    por coronavirus COVID-19.
+                </p>
+                <a href="http://bancos.salud.gob.ar/bancos/materiales-para-poblacion" class="btn">Preguntas
+                    frecuentes</a>
+            </div>
+        </article>
+        <h2>FORMULARIO DE DETECCIÓN (TEST) DE CORONAVIRUS</h2>
+        <section class="container-form">
+            <article>
+                <p>
+                    Hola usuario! Si tenes sintomas de COVID-19 o has estado en contacto con una persona afectada
+                    deberias hacer un control y seguimiento diario de tus sintomas.
+                    <br> <br>
+                    Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las
+                    indicaciones y consejos a seguir en cada caso.
+                    El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos
+                    en <strong>Ver las condiciones y políticas</strong>
+                </p>
+                <h3>SINTOMAS</h3>
+                <div class="sintomas-img">
+                    <img src="img/24-fiebre-dolor-garganta.png" alt="sintoma covid">
+                    <img src="img/25-fiebre-dificultad-respirar.png" alt="sintoma covid">
+                    <img src="img/23-fiebre-tos.png" alt="sintoma covid">
+                </div>
+            </article>
+            <article>
+                <form action="#" name="form" onsubmit="return validar()">
+                    <div class="container-input-big">
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="container-input-medium">
+                        <label for="dni">DNI:</label>
+                        <input type="number" id="dni" name="dni">
+                    </div>
+                    <div class="container-input-medium">
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="container-input-medium">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                    </div>
+                    <div class="container-input-medium">
+                        <label for="sexo">Sexo:</label>
+                        <div class="container-radio-input">
+                            <div class="container-input-small">
+                                <label for="masculino">M</label>
+                                <input type="radio" id="masculino" name="sexo" value="m">
+                            </div>
+                            <div class="container-input-small">
+                                <label for="femenino">F</label>
+                                <input type="radio" id="femenino" name="sexo" value="f">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-input-inline">
+                        <label for="viaje" class="label-pregunta">¿Has viajado al exterior de la Republica
+                            Argentina?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" name="confirmacion" value="si"
+                                onchange="mostrarOpciones('confirmacion', 'ocultar')">
+                            <label for="no">NO</label>
+                            <input type="radio" name="confirmacion" value="no"
+                                onchange="mostrarOpciones('confirmacion', 'ocultar')">
+                        </div>
+                    </div>
+                    <div class="container-input-inline" id="ocultar">
+                        <label for="paises">Paises visitados</label>
+                        <select name="paises" id="paises">
+                            <option value="1">España</option>
+                            <option value="2">Italia</option>
+                            <option value="3">Inglaterra</option>
+                            <option value="1">EEUU</option>
+                            <option value="2">México</option>
+                            <option value="3">Brasil</option>
+                            <option value="1">Chile</option>
+                            <option value="2">Uruguay</option>
+                        </select>
+                    </div>
+                    <p>Por favor indica los sintomas que presentas:</p>
+                    <div class="container-input-inline">
+                        <label for="sintoma-fiebre" class="label-pregunta">¿Tuviste Fiebre mayor a 38
+                            grados?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" id="si" name="fiebre" value="si">
+                            <label for="no">NO</label>
+                            <input type="radio" id="no" name="fiebre" value="no">
+                        </div>
+                    </div>
+                    <div class="container-input-inline">
+                        <label for="sintoma-cabeza" class="label-pregunta">¿Tuviste Dolor de cabeza?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" id="si" name="dolor-cabeza" value="si">
+                            <label for="no">NO</label>
+                            <input type="radio" id="no" name="dolor-cabeza" value="no">
+                        </div>
+                    </div>
+                    <div class="container-input-inline">
+                        <label for="sintoma-tos" class="label-pregunta">¿Tuviste una tos persistente?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" id="si" name="tos" value="si">
+                            <label for="no">NO</label>
+                            <input type="radio" id="no" name="tos" value="no">
+                        </div>
+                    </div>
+                    <div class="container-input-inline">
+                        <label for="sintoma-garganta" class="label-pregunta">¿Tuviste Dolor de garganta?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" id="si" name="garganta" value="si">
+                            <label for="no">NO</label>
+                            <input type="radio" id="no" name="garganta" value="no">
+                        </div>
+                    </div>
+                    <div class="container-input-inline">
+                        <label for="sintoma-garganta" class="label-pregunta">¿Tuviste Dificultad para
+                            respirar?</label>
+                        <div class="input-radio-group">
+                            <label for="si">SI</label>
+                            <input type="radio" id="si" name="respiracion" value="si"
+                                onchange="mostrarOpciones('respiracion', 'container-input-')">
+                            <label for="no">NO</label>
+                            <input type="radio" id="no" name="respiracion" value="no"
+                                onchange="mostrarOpciones('respiracion', 'container-input-')">
+                        </div>
+                    </div>
+                    <div id="container-input-">
+                        <div class="container-input-medium">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <div class="container-input-medium">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad">
+                        </div>
+                    </div>
+                    <div id="mensaje" class="error"></div>
+                    <button class="btn" id="boton-form" type="submit" value="enviar">ENVIAR TEST</button>
+                </form>
+            </article>
+        </section>
+        <h2>MEDIDAS DE PRECAUCIÓN</h2>
+        <section class="precaucion-img-group">
+            <img src="img/14-lavarse-manos.png" alt="preacaucion covid">
+            <img src="img/16-tocar-nariz.png" alt="preacaucion covid">
+            <img src="img/15-estornudar.png" alt="preacaucion covid">
+            <img src="img/17-ventilar.png" alt="preacaucion covid">
+            <img src="img/18-limpiar-objetos.png" alt="preacaucion covid">
+            <img src="img/20-reducir-contacto.png" alt="preacaucion covid">
+            <img src="img/19-permanecer-domicilio.png" alt="preacaucion covid">
+            <img src="img/21-no-compartir-mate.png" alt="preacaucion covid">
+        </section>
+        <h2>HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
+        <section class="mapa">
+            <article>
+                <h3>HOSPITAL ITALIANO DE SAN JUSTO</h3>
+                <p>Tel: 4959-0200</p>
+                <p>Dirección: Pres. Juan Domingo Perón 2231 </p>
+                <p>Cuidad: San Justo</p>
+                <img src="img/hospital.jpg" alt="hospital italiano">
+            </article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.641899708009!2d-58.55807972442332!3d-34.669588345277724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7cd14129b61%3A0x78f6eab9f8572beb!2sHospital%20Italiano%20de%20San%20Justo%20Agust%C3%ADn%20Rocca!5e0!3m2!1ses!2sar!4v1602196252149!5m2!1ses!2sar"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <article>
+                <h3>Datos del Grupo:</h3>
+                <ul>
+                    <li>Da Costa Rolo, Melisa - 35946226</li>
+                    <li>Juarez, Luz - 42819089</li>
+                    <li>Tonietti, Lucía - 44163427</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Menu inferior:</h3>
+                <ul>
+                    <li><a href="listado.html">Enfermedades</a></li>
+                    <li><a href="#">Vacunas</a> </li>
+                    <li><a href="hospitales.html">Hospitales</a></li>
+                    <li><a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </article>
+            <article class="redes-sociales">
+                <h3>Redes sociales:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/msalnacion" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/msalnacion" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/msalnacion/" target="_blank"><i
+                                class="fab fa-instagram"></a></i></li>
+                </ul>
+            </article>
+        </div>
+    </footer>
+    <script defer type="text/javascript" src="js/funcionesEnfermedad.js"></script>
+</body>
+
+</html>
