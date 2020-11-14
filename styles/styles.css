@@ -622,3 +622,71 @@ select{
     margin-bottom: 40px;
     border: none;
 }
+
+/* pagina calendario vacunacion */
+#calendario-page{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#calendario-page h2{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #2973a2;
+}
+#calendario-page span{
+    
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#calendario-page .fc-title span{
+    color: #fff;
+}
+/* menu responsive */
+
+a.desplegable{
+    display: none;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/hamburger.gif);
+    background-color: #364962;
+    position:fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+}
+a.desplegable:hover{
+    background-color:#ff5a5f;
+}
+
+/*Para tablet*/
+@media screen and (min-width:47em) and (max-width:60em){
+    
+}
+/*para celulares*/
+@media screen and (max-width:47em){
+    
+}
+/*hasta tablet*/
+@media screen and (max-width:60em){
+    .navegador ul{
+        flex-direction: column;
+        text-align: center;
+        background-color: #364962;
+    }
+    .navegador{
+        display:none;
+    }
+    a.desplegable{
+        display: block;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:70em){
+    .buscador{
+        display: none;
+    }
+}
