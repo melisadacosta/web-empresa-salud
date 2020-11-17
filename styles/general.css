@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+main{
+    margin:auto;
+}
+/* HEADER */
+header{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.container-logo-searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10% 20px 10%;
+    background-color: #364962;
+}
+header img{
+    width: 12%;
+}
+.buscador{
+    display: flex;
+}
+.buscador input{
+    border-radius: inherit;
+    margin: 0px;
+}
+ #searchbar{
+    width: 600px;
+    background-color: #efefef;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: inherit;
+    margin: 0px;
+}
+ #searchbar:focus{
+    outline: none;
+}
+ #searchbtn{
+    width: 67px;
+    height: 40px;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    background-color: #2973a2;
+}
+#searchbtn:hover{
+    background-color: #ff5a5f;
+}
+.buscador input[type="submit"] {
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 1.3333333333333333em;
+    font-weight: 900;
+    color: white;
+}
+.navegador{
+    background-color: #2973a2;
+}
+.navegador ul{
+    display: flex;
+    justify-content: center;
+}
+.navegador li{
+    list-style: none;
+}
+.navegador a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 30px 10px 30px;
+    display: block;
+}
+.navegador a:hover{
+    color: #f5f5f5;
+    background-color: #ff5a5f ;
+}
+/* FOOTER */
+
+.container-footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: auto;
+    padding: 50px 0px;
+}
+footer{
+    background-color: #364962;
+}
+footer li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer h3{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.redes-sociales ul{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.redes-sociales i{
+    font-size: 16px;
+}
+.redes-sociales i:hover{
+    color: #ff5a5f;
+}
+
+/* MENU RESPONSIVE */
+
+a.desplegable{
+    display: none;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/hamburger.gif);
+    background-color: #364962;
+    position:fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+}
+a.desplegable:hover{
+    background-color:#ff5a5f;
+}
+
+/*Para tablet*/
+@media screen and (min-width:47em) and (max-width:60em){
+    
+}
+/*para celulares*/
+@media screen and (max-width:47em){
+    
+}
+/*hasta tablet*/
+@media screen and (max-width:60em){
+    .navegador ul{
+        flex-direction: column;
+        text-align: center;
+        background-color: #364962;
+    }
+    .navegador{
+        display:none;
+    }
+    a.desplegable{
+        display: block;
+    }
+    .container-footer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:70em){
+    .buscador{
+        display: none;
+    }
+}

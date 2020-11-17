@@ -48,6 +48,17 @@ function validar() {
     validarSintomas('garganta', preguntaDolorGarganta);
     var preguntaRespiracion = "* Debe responder a la pregunta: ¿Tuviste dificultad para respirar?";
     validarSintomas('respiracion', preguntaRespiracion);
+    
+    var totalSintomas = 0;
+
+    function contadorDeSintomas(nombreName) {
+        var opciones = document.getElementsByName(nombreName);
+        for (i in opciones) {
+            if (opciones[i].value == "si" && opciones[i].checked) {
+                totalSintomas++;
+            }
+        }
+    }
 
     contadorDeSintomas('fiebre');
     contadorDeSintomas('dolor-cabeza');
@@ -79,13 +90,4 @@ function mostrarOpciones(nombreRadio, nombreSelectId) {
     }
 }
 
-var totalSintomas = 0;
 
-function contadorDeSintomas(nombreName) {
-    var opciones = document.getElementsByName(nombreName);
-    for (i in opciones) {
-        if (opciones[i].value == "si" && opciones[i].checked) {
-            totalSintomas++;
-        }
-    }
-}

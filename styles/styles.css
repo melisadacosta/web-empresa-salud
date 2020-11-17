@@ -1,87 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-body{
-    background-color: #f5f5f5;
-}
-main{
-    margin:auto;
-}
-header{
-    height: 15%;
+.slider {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
-.container-logo-searchbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 10% 20px 10%;
-    background-color: #364962;
-}
-header img{
-    width: 12%;
-}
-.buscador{
-    display: flex;
-}
-.buscador input{
-    border-radius: inherit;
-    margin: 0px;
-}
- #searchbar{
-    width: 600px;
-    background-color: #efefef;
-    padding: 10px 20px 10px 20px;
-    border: none;
-    border-radius: inherit;
-    margin: 0px;
-}
- #searchbar:focus{
-    outline: none;
-}
- #searchbtn{
-    width: 67px;
-    height: 40px;
-    padding: 0px;
-    cursor: pointer;
-    border: none;
-    background-color: #2973a2;
-}
-#searchbtn:hover{
-    background-color: #ff5a5f;
-}
-.buscador input[type="submit"] {
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 1.3333333333333333em;
-    font-weight: 900;
-    color: white;
-}
-.slider{
-    position: relative;
-}
-.slider img{
+.slider img {
     width: 100%;
+    height: auto;
 }
-.slider i{
-    font-size: 34px;
-    color: #364962;
-    cursor: pointer;
-}
-.slider i:hover{
-    color: #ff5a5f;
-}
-.control-left, .control-right{
-    position: absolute;
-    top: 45%;
-}
-.control-left{
-    left: 6%;
-}
-.control-right{
-    right:6%;
+.bx-wrapper{
+    border: none;
 }
 #section-informe{
     width: 80%;
@@ -125,44 +54,6 @@ header img{
     background-color: #ff5a5f;
     text-transform: uppercase;
     text-decoration: none;
-}
-.container-footer{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    margin: auto;
-    padding: 50px 0px;
-}
-footer{
-    background-color: #364962;
-}
-footer li{
-    list-style: none;
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 1.5;
-}
-footer a{
-    text-decoration: none;
-    color: white;
-}
-footer h3{
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #fff;
-}
-.redes-sociales ul{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.redes-sociales i{
-    font-size: 16px;
-}
-.redes-sociales i:hover{
-    color: #ff5a5f;
 }
 .atencion-salud{
     background-color: #2973a2;
@@ -453,240 +344,120 @@ select{
 #boton-form{
     margin-top: 20px;
 }
-/* pagina contacto */
-.contacto-page{
-    width: 80%;
-}
-.contacto-page article {
-    margin: 40px 0px;
-    padding: 20px;
-    width: 48%;
-    box-sizing: border-box;
-}
-.contacto-page ul li {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    color:  #5a5a5a;
-}
-.contacto-page article li {
-    list-style:none;
-}
-.aPrueba {
-    display: flex;
-    justify-content: space-between;
-}
-.form-contacto {
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-}
-.registro {
-    margin-bottom: 20px;
-    width: 100%;
-}
-.contacto-page .btn{
-    width: 30%;
-    align-self: flex-end;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #2973a2;
-}
-#ubicacion iframe{
-   width: 100%;
-   height: 350px;
-   margin-bottom: 50px;
-}
-#ubicacion h2{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.contacto-page h2{
-    color: #444;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-#iconos-contacto{
-    font-size: 24px;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-}
-#iconos-contacto a{
-    color: #ff5a5f;
-}
-.form-contacto p{
-    font-size: 14px;
-    color: #5a5a5a;
-}
 
-/* pagina listado enfermedades */
 
-#listado-page{
-    width: 80%;
-    margin: auto;
-}
-#listado-page h1{
-    text-align: center;
-    font-weight: 510;
-    color:#364962 ;
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-.buscadorEnf{
-    padding: 12px;
-    border-radius: 5px;
-    border: 0.3px solid #4d5157;
-    background-color: #f5f5f5 ;
-    margin: 30px;
-    margin-left: 90px;
-    width: 90%;
-}
-.listado-enfermedades img{
-    box-sizing: border-box;
-    width: 25%;
-    height: auto;
-    border-radius: 5%;
-}
-.listado-enfermedades img:hover{
-    opacity: 0.4;
-}
-.listado-enfermedades div{
-    font-size: 16px;
-    display: inline-block;
-    margin-left: 20px;
-}
-.listado-enfermedades h2{
-    font-size: 20px;
-    font-weight:500;
-}
-.buscador-enfermedades{
-    margin-bottom: 30px;
-}
-.buscador-enfermedades #searchbar{
-    width: 100%;
-    border-radius: 1%;
-    outline: none;
-    background-color: #f5f5f5;
-    border:  #ff5a5f 2px solid;
-    margin-bottom: 15px;
-    padding-left: 50px;
-}
-.buscador-enfermedades .buscador{
-    width: 100%;
-}
-.buscador i{
-    position: absolute;
-    font-size: 1.3333333333333333em;
-    color: #ff5a5f;
-    padding: 10px 15px;
-}
-.listado-enfermedades p{
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 30px;
-}
-.listado-enfermedades h2{
-    color: #444;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-.listado-enfermedades{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.container-enf{
-    box-sizing: border-box;
-    width: 70%;
-}
-
-/* pagina hospitales */
-#hospitales-page{
-    width: 100%;
-    margin: auto;
-}
-#hospitales-page h2{
-    margin-top: 40px;
-}
-#hospitales-page iframe{
-    width: 100%;
-    height: 350px;
-    margin-bottom: 40px;
-    border: none;
-}
-
-/* pagina calendario vacunacion */
-#calendario-page{
-    width: 80%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-#calendario-page h2{
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: #2973a2;
-}
-#calendario-page span{
+@media screen and (max-width: 1024px) { 
     
-    font-weight: 500;
-    text-transform: capitalize;
-}
-#calendario-page .fc-title span{
-    color: #fff;
-}
-/* menu responsive */
-
-a.desplegable{
-    display: none;
-    width: 55px;
-    height: 55px;
-    background-image: url(../img/hamburger.gif);
-    background-color: #364962;
-    position:fixed;
-    top:0;
-    right: 0;
-    cursor: pointer;
-}
-a.desplegable:hover{
-    background-color:#ff5a5f;
-}
-
-/*Para tablet*/
-@media screen and (min-width:47em) and (max-width:60em){
-    
-}
-/*para celulares*/
-@media screen and (max-width:47em){
-    
-}
-/*hasta tablet*/
-@media screen and (max-width:60em){
-    .navegador ul{
-        flex-direction: column;
+    #searchbar{
+        background-color: #efefef;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: inherit;
+        margin: 0px;
+        width: 200px;
+    }
+     #section-informe h1 {
+        font-size: 100%;
         text-align: center;
-        background-color: #364962;
     }
-    .navegador{
-        display:none;
-    }
-    a.desplegable{
-        display: block;
-    }
-    .container-footer{
+   
+    .container-informe {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
-}
-@media screen and (max-width:70em){
-    .buscador{
-        display: none;
+    .atencion-salud{
+        background-color: #2973a2;
+        color: white;
+        padding: 30px 0px;
+        margin-bottom: 20px;
+    }
+    .container-informe article{
+        margin-bottom: 20px;
+    }
+    .container-atencion-salud {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .atencion-salud .virus{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 4px solid;
+        border-right: transparent;
+        margin: 20px;
+    }
+    
+    .atencion-salud .virus img{
+        width: 15%;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+   
+    .atencion-salud .virus h4{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 10px;
+    }
+
+    .atencion-salud .info{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .info p{
+        font-size: 28px;
+        font-weight: 200;
+        margin-bottom: 23px;
+        text-align: center;
+        justify-content: center;
+    }
+
+   /* .container-atencion-salud{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }*/
+    .container-atencion-salud .container-tel{
+        width: 90%;
+        border: 2px solid #ff5a5f;
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-atencion-salud .tel{
+        display: flex;
+        align-items: center;
+    }
+    .tel i{
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    .tel h3{
+        font-size: 20px;
+    }
+    .container-tel p{
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 }
+
+
+
+
+
+

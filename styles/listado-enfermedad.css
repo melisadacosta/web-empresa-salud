@@ -1,0 +1,82 @@
+/* pagina listado enfermedades */
+
+#listado-page{
+    width: 80%;
+    margin: auto;
+}
+#listado-page h1{
+    text-align: center;
+    font-weight: 510;
+    color:#364962 ;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.buscadorEnf{
+    padding: 12px;
+    border-radius: 5px;
+    border: 0.3px solid #4d5157;
+    background-color: #f5f5f5 ;
+    margin: 30px;
+    margin-left: 90px;
+    width: 90%;
+}
+.listado-enfermedades img{
+    box-sizing: border-box;
+    width: 25%;
+    height: auto;
+    border-radius: 5%;
+}
+.listado-enfermedades img:hover{
+    opacity: 0.4;
+}
+.listado-enfermedades div{
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.listado-enfermedades h2{
+    font-size: 20px;
+    font-weight:500;
+}
+.buscador-enfermedades{
+    margin-bottom: 30px;
+}
+.buscador-enfermedades #searchbar{
+    width: 100%;
+    border-radius: 1%;
+    outline: none;
+    background-color: #f5f5f5;
+    border:  #ff5a5f 2px solid;
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+.buscador-enfermedades .buscador{
+    width: 100%;
+}
+.buscador i{
+    position: absolute;
+    font-size: 1.3333333333333333em;
+    color: #ff5a5f;
+    padding: 10px 15px;
+}
+.listado-enfermedades p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+}
+.listado-enfermedades h2{
+    color: #444;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.listado-enfermedades{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.container-enf{
+    box-sizing: border-box;
+    width: 70%;
+}
